@@ -1,0 +1,28 @@
+h1{
+    text-align:center;
+    font-size:2rem;
+    color:black;
+    
+}
+.nav-des {
+    position:fixed;
+    top:0;
+    left:0;
+    width:200px;
+    height:100vh;
+
+}
+.nav-des > div {
+    background-color:gray;
+    padding: 20px;
+}
+.nav-des > div > img {
+    max-width:100%;
+    height: auto;
+}
+.nav-des > div > a{
+    font-size:15px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}

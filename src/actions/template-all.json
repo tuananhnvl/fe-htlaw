@@ -1,0 +1,110 @@
+{
+  "packageThanhLapMoi": [
+    {
+      "label" : "Nhấp chọn",
+      "value": "null"
+    },
+    {
+      "label" : "Gói A",
+      "value": "PackA"
+    }
+    ,
+    {
+      "label" : "Gói B",
+      "value": "PackB"
+    }
+    ,
+    {
+      "label" : "Gói C",
+      "value": "PackC"
+    }
+  ],
+  "typeCompany" : [
+    {
+      "label": "Chọn loại hình ...",
+      "value": "null"
+    },
+    {
+      "label": "Công ty TNHH 1 TV",
+      "value": "CTY1TV"
+    },
+    {
+      "label": "Công ty TNHH 2 TV",
+      "value": "CTY2TV"
+    }
+    ,
+    {
+      "label": "Công ty Cổ phần",
+      "value": "CTYCP"
+    }
+    ,
+    {
+      "label": "Chi nhánh",
+      "value": "CN"
+    }
+    ,
+    {
+      "label": "Văn phòng đại diện",
+      "value": "VPDD"
+    }
+    ,
+    {
+      "label": "Hộ kinh doanh",
+      "value": "HKD"
+    }
+    ,
+    {
+      "label": "Pháp nhân nước ngoài tại Việt Nam",
+      "value": "FDI"
+    }
+  ],
+  "typeServcies" : [
+    {
+      "label": "Nhấp chọn ...",
+      "value": "null"    
+    },
+    {
+      "label": "Thành lập DN Việt Nam",
+      "value": "TLVN"
+    },
+    {
+      "label": "Thành lập DN Nước ngoài",
+      "value": "TLNN"
+    }
+    ,
+    {
+      "label": "Thay đổi nội dung ĐKKD",
+      "value": "TDGP"
+    }
+    ,
+    {
+      "label": "Thay đổi, điều chỉnh DN Nước ngoài",
+      "value": "TDNN"
+    }
+
+  ],
+  "anotherServices" : [
+    {  
+      "label": "Có",
+      "value": "1"    
+    },
+    {  
+      "label": "Không",
+      "value": "0"    
+    }
+  ],
+  "baseKeyCompare" : {
+    "CTY1TV" : "Công ty TNHH 1TV",
+    "CTY2TV" : "Công ty TNHH 2TV",
+    "CTYCP" : "Công ty Cổ phần",
+    "CN" : "Chi nhánh",
+    "VPDD" : "Văn phòng đại diện",
+    "HKD" : "Hộ kinh doanh",
+    "FDI" : "Pháp nhân nước ngoài tại Việt Nam",
+    "PackA" : "Gói A",
+    "PackB" : "Gói B",
+    "PackC" : "Gói C"
+  }
+}
+
+

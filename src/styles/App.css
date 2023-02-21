@@ -1,0 +1,71 @@
+:root {
+    --color-primary: #002B5B;
+}
+.wrapper-all-widthmenu {
+    position: relative;
+    left: 200px;
+    top: 0;
+    width: calc(100vw - 200px - 50px);
+    height: 100%;
+  
+}
+.wrapper-all-widthmenu table {
+    margin-top:50px;
+}
+.hidden {
+    opacity:0; 
+    display:none; 
+}
+.show {
+    opacity:1!important;
+    display:block!important;
+}
+.pass-notification {
+    background:green !important;
+    color:white;
+    font-weight:bold;
+}
+.error-notification {
+    background:darkred !important;
+    color:white;
+    font-weight:bold;
+}
+.form-sreaching {
+    width:100%;
+}
+.form-sreaching  input,.form-sreaching  button {
+    box-sizing: border-box;
+    height:30px;
+}
+.form-sreaching  input {
+    width:70%;
+}
+.form-sreaching  button {
+    width:30%;
+}
+.result-sreaching {
+    width:50%;
+    margin-top:1rem;
+    border: 1px solid gray;
+}
+.result-sreaching h3 {
+    margin: 0;
+    color:white;
+    text-align:center;
+    padding: .3rem 0;
+    font-size:.8rem;
+    display:block;
+    background:var(--color-primary);
+   
+}
+
+.result-sreaching ul li {
+    
+    font-size:.8rem;
+    padding: .2rem 1rem;
+    margin-bottom: 2px solid gray;
+}
+.edit-wrapper {
+    width:800px;
+    float:right;
+}
