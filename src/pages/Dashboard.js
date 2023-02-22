@@ -30,9 +30,10 @@ export default function Dashboard() {
   const refreshToken = async () => {
     try {
       const response = await axios.get('https://server-htlaw.onrender.com/token',config);
-
+      console.log(response)
       setToken(response.data.accessToken);
       const decoded = jwt_decode(response.data.accessToken);
+      console.log(decoded)
       setName(decoded.name);
       setExpire(decoded.exp);
     } catch (error) {
