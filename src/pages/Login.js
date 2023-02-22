@@ -15,7 +15,7 @@ const Login = () => {
             await axios.post('https://server-htlaw.onrender.com/login', {
                 email: email,
                 password: password
-            }, { withCredentials: true });
+            });
             navigate("/dashboard");
         } catch (error) {
             if (error.response) {
