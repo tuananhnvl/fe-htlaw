@@ -12,7 +12,8 @@ const Login = () => {
           'Access-Control-Allow-Origin': '*',
           'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE',
           'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          withCredentials : true
         }
       };
     const Auth = async (e) => {
