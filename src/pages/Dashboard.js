@@ -28,6 +28,7 @@ export default function Dashboard() {
       setName(decoded.name);
       setExpire(decoded.exp);
     } catch (error) {
+      console.error(error)
       if (error.response) {
         navigate("/");
       }
