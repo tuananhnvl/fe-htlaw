@@ -12,9 +12,11 @@ const Login = () => {
           'Access-Control-Allow-Origin': '*',
           'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE',
           'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-          'Content-Type': 'application/json',
-          withCredentials : true
-        }
+          'Content-Type': 'application/json'
+         
+        },
+        credentials: "include",
+        withCredentials : true
       };
     const Auth = async (e) => {
         e.preventDefault();
