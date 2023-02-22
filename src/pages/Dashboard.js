@@ -29,7 +29,15 @@ export default function Dashboard() {
   };
   const refreshToken = async () => {
     try {
-      const response = await axios.get('https://server-htlaw.onrender.com/token',{withCredentials : true});
+      const response = await axios.get('https://server-htlaw.onrender.com/token',{
+        headers: {
+          Accept: "applicaiton/json",
+          "Content-Type": "application/json",
+        },
+        body: body && JSON.stringify(body),
+        withCredentials: true,
+        credentials: 'include' 
+      });
       console.log(response)
       setToken(response.data.accessToken);
       const decoded = jwt_decode(response.data.accessToken);
