@@ -44,7 +44,7 @@ const EditUser = () => {
 
   const getCustomerData = async (key) => {
     try {
-      const response = await axios.get(`http://localhost:5000/datacustomerdn/${key}`);
+      const response = await axios.get(`https://be-htlaw.vercel.app/datacustomerdn/${key}`);
       console.log(response.data)
       console.log(response.data.detail['type-services'])
       setDataOld(response.data)
@@ -120,7 +120,7 @@ const EditUser = () => {
   const updateCustomerDN = async (e) => {
     e.preventDefault();
     try {
-      const results = await axios.patch(`http://localhost:5000/datacustomerdn/edit/${key}`, {
+      const results = await axios.patch(`https://be-htlaw.vercel.app/datacustomerdn/edit/${key}`, {
         dataChange
       });
       if(results.data.status == 'PASS') {

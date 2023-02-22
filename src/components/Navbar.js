@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const Logout = async () => {
     try {
-      await axios.delete('http://localhost:5000/logout');
+      await axios.delete('https://be-htlaw.vercel.app/logout');
       navigate("/");
     } catch (error) {
       console.log(error);

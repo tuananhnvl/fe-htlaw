@@ -122,7 +122,7 @@ const DataCustomerDN = () => {
 
   /* api curd */
   const getAllCustomer = async () => {
-    const response = await axios.get("http://localhost:5000/datacustomer");
+    const response = await axios.get("https://be-htlaw.vercel.app/datacustomer");
     console.log(response.data)
     // console.log(response.data['datainfo'])
 
@@ -132,7 +132,7 @@ const DataCustomerDN = () => {
 
   const deleteCustomerDN = async (e) => {
     try {
-      const response = await axios.delete(`http://localhost:5000/datacustomerdn/delete/${e.target.value}`);
+      const response = await axios.delete(`https://be-htlaw.vercel.app/datacustomerdn/delete/${e.target.value}`);
       console.log(response.data)
       getAllCustomer();
       setShowModalAction(false)
@@ -148,7 +148,7 @@ const DataCustomerDN = () => {
       alert('Nhập cú pháp tra cứu ..')
     } else {
       try {
-        const response = await axios.post(`http://localhost:5000/searchingcustomer`, {
+        const response = await axios.post(`https://be-htlaw.vercel.app/searchingcustomer`, {
           querySearching: texttoSearch
         });
         console.log(response.data)

@@ -12,7 +12,7 @@ const Login = () => {
         e.preventDefault();
         try {
             console.log(email)
-            await axios.post('http://localhost:5000/login', {
+            await axios.post('https://be-htlaw.vercel.app/login', {
                 email: email,
                 password: password
             });
