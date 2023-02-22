@@ -7,7 +7,14 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [msg, setMsg] = useState('');
     const navigate = useNavigate();
-
+    const config = {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE',
+          'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+          'Content-Type': 'application/json'
+        }
+      };
     const Auth = async (e) => {
         e.preventDefault();
         try {
@@ -15,11 +22,7 @@ const Login = () => {
             await axios.post('https://server-htlaw.onrender.com/login', {
                 email: email,
                 password: password
-            }, {
-                headers: {
-                  'Content-Type': 'application/json'
-                }
-              });
+            },config);
             navigate("/dashboard");
         } catch (error) {
             if (error.response) {
