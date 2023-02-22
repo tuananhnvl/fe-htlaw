@@ -93,7 +93,7 @@ const AddCustomerDN = () => {
       ]
     }
     try {
-       const results = await axios.post("https://be-htlaw.vercel.app/addcustomerdn", {
+       const results = await axios.post("https://server-htlaw.onrender.com/addcustomerdn", {
          dataReady
        });
        if(results.data.status == 'PASS') {

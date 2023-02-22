@@ -13,7 +13,7 @@ const Register = () => {
     const Register = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://be-htlaw.vercel.app/users', {
+            await axios.post('https://server-htlaw.onrender.com/users', {
                 name: name,
                 email: email,
                 password: password,
