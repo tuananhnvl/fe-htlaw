@@ -24,12 +24,12 @@ export default function Dashboard() {
       'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE',
       'Access-Control-Allow-Headers': 'Content-Type, Authorization',
       'Content-Type': 'application/json',
-      withCredentials : true
+      
     }
   };
   const refreshToken = async () => {
     try {
-      const response = await axios.get('https://server-htlaw.onrender.com/token',config);
+      const response = await axios.get('https://server-htlaw.onrender.com/token',{withCredentials : true});
       console.log(response)
       setToken(response.data.accessToken);
       const decoded = jwt_decode(response.data.accessToken);
