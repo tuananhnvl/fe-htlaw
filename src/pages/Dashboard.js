@@ -18,10 +18,18 @@ export default function Dashboard() {
 
     getUsers();
   }, []);
-
+  const config = {
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      'Content-Type': 'application/json',
+      withCredentials : true
+    }
+  };
   const refreshToken = async () => {
     try {
-      const response = await axios.get('https://server-htlaw.onrender.com/token',{ withCredentials : true});
+      const response = await axios.get('https://server-htlaw.onrender.com/token',config);
 
       setToken(response.data.accessToken);
       const decoded = jwt_decode(response.data.accessToken);
