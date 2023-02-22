@@ -18,7 +18,10 @@ const Register = () => {
                 email: email,
                 password: password,
                 confPassword: confPassword
-            });
+            },{
+                withCredentials : true
+            }
+            );
             navigate("/");
         } catch (error) {
             if (error.response) {
